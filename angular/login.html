@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-controller="loginCtrl" class="indexhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<!--重置样式-->
+        <link rel="stylesheet" href="css/reset.css"/>
+        <!--引用样式-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!--共用样式-->
+        <link rel="stylesheet" href="css/css.css"/>
+        <!--内容样式-->
+        <link rel="stylesheet" href="css/login.css"/>
+
+		<script type="text/javascript" src="/script/js/lib/require.js" data-main="/script/js/main.js"></script>
+		<script>
+	     require(['view/login'], function () {
+
+         })
+        </script>
+	</head>
+	<body>
+		<div class="login">
+            <input id='userName' class="form-control" type="text" placeholder="账号">
+            <input id='userPassword' class="form-control" type="text" placeholder="密码">
+            <button class="btn btn-success" ng-click='loginhante()'>登录</button>
+        </div>
+	</body>
+</html>

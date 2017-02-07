@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angular项目目录</title>
+        <!--重置样式-->
+        <link rel="stylesheet" href="css/reset.css"/>
+        <!--引用样式-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!--共用样式-->
+        <link rel="stylesheet" href="css/css.css"/>
+        <!--内容样式-->
+		<script type="text/javascript" src="/script/js/lib/require.js" data-main="/script/js/main.js"></script>
+		<script>
+	     require(['view/index'], function () {
+         })
+        </script>
+	</head>
+	<body>
+        <h2>hello world</h2>
+		<div ng-view></div>
+	</body>
+</html>
